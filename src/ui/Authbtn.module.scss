@@ -1,0 +1,31 @@
+.main{
+    .authBtn{
+        display: flex;
+        width: 500px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #AD02E0;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-family: "Montserrat";
+        justify-content: center;
+        align-items: center;
+        margin-left: 52px;
+        margin-top: 29.5px;
+    }
+
+    .regBtn{
+        display: flex;
+        width: 499px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #AD02E0;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-family: "Montserrat";
+        justify-content: center;
+        align-items: center;
+        margin-left: 52px;
+        margin-top: 10px;
+    }
+}
