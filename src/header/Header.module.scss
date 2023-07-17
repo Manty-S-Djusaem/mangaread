@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .openButtonJoin {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .openButtonSign {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .joinModalContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .joinModal {
+    width: 603px;
+    height: 478px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 20px;
+    position: relative;
+  }
+  
+  .signModalContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .signModal {
+    width: 603px;
+    height: 761px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 20px;
+    position: relative;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modalContent {
+    padding: 20px;
+  }
+  
