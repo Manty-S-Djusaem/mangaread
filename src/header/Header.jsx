@@ -81,20 +81,24 @@ function Header(props) {
                             <h1 className={module.hedtext}>Вход</h1>
                             <h1 className={module.hedtext1}>Регистрация</h1>
                         </span>
-                        
+
                         <div className={module.modalContent}>
-                        <img src={Photo} className={module.photoReg}/>
-                        <h1 className={module.photoText}>ДОБАВИТЬ ФОТО</h1>
-                            <input
-                                type='Username' placeholder='Username'
-                            />
-                            <div className={module.modalContent2}>
-                                <input
-                                    type='Password' placeholder='Nickname' />
-                            </div>
-                            <div className={module.modalContent3}>
-                                <input
-                                    type='Password' placeholder='Password' />
+                            <img src={Photo} className={module.photoReg} />
+                            <h1 className={module.photoText}>ДОБАВИТЬ ФОТО</h1>
+                            <div className={module.inputs}>
+                                <div className={module.modalContent3}>
+                                    <input
+                                        type='Username' placeholder='Username'
+                                    />
+                                </div>
+                                <div className={module.modalContent4}>
+                                    <input
+                                        type='Username' placeholder='Nickname' />
+                                </div>
+                                <div className={module.modalContent5}>
+                                    <input
+                                        type='Password' placeholder='Password' />
+                                </div>
                             </div>
                         </div>
                         <Reg />
