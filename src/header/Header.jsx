@@ -33,12 +33,24 @@ function Header(props) {
 
   return (
     <div className={module.container}>
-      <button className={module.openButtonJoin} onClick={handleOpenJoinModal}>
+      <button
+        className={module.openButtonJoin}
+        onClick={handleOpenJoinModal}
+        onMouseEnter={() => setActiveTab('join')}
+        onMouseLeave={() => setActiveTab('')}
+      >
         ВОЙТИ
+        <div className={`${module.underline} ${activeTab === 'join' ? 'active' : ''}`}></div>
       </button>
 
-      <button className={module.openButtonReg} onClick={handleOpenRegModal}>
+      <button
+        className={module.openButtonReg}
+        onClick={handleOpenRegModal}
+        onMouseEnter={() => setActiveTab('register')}
+        onMouseLeave={() => setActiveTab('')}
+      >
         РЕГИСТРАЦИЯ
+        <div className={`${module.underline} ${activeTab === 'register' ? 'active' : ''}`}></div>
       </button>
 
       {joinModalOpen && (
@@ -53,7 +65,7 @@ function Header(props) {
             </span>
             <div
               className={`underline ${activeTab === 'join' ? 'active' : ''}`}
-              style={{ width: '71px', borderBottom: '5px solid #AD02E0', marginLeft: '51px', marginTop: '-12px'}}
+              style={{ width: '71px', borderBottom: '5px solid #AD02E0', marginLeft: '51px', marginTop: '-12px' }}
             ></div>
             <div className={module.modalContent}>
               <input type='Username' placeholder='Username' />
@@ -79,7 +91,7 @@ function Header(props) {
             </span>
             <div
               className={`underline ${activeTab === 'register' ? 'active' : ''}`}
-              style={{ width: '164px', borderBottom: '5px solid #AD02E0', marginLeft: '142px', marginTop: '-12px'}}
+              style={{ width: '164px', borderBottom: '5px solid #AD02E0', marginLeft: '142px', marginTop: '-12px' }}
             ></div>
             <div className={module.modalContent}>
               <img src={Photo} className={module.photoReg} />
