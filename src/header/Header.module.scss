@@ -90,7 +90,7 @@
 
     .joinModal {
         .modalContent input {
-            margin-top: 35.5px;
+            margin-top: 42px;
             width: 500px;
             height: 52px;
             border-radius: 8px;
@@ -109,6 +109,22 @@
             font-size: 24px;
         }
     }
+
+    .underline {
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+      }
+      
+      .underline::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: #878787;
+      }
 }
 
 .RegModalContainer {
@@ -143,7 +159,7 @@
     }
 
     .hedtext {
-        padding-left: 52.5px;
+        padding-left: 53.3px;
         display: inline-block;
         white-space: nowrap;
         margin-top: 68.5px;
@@ -158,8 +174,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 210.5px;
-        margin-top: 32px;
+        margin-left: 212px;
+        margin-top: 38px;
     }
 
     .photoText {
@@ -170,13 +186,14 @@
         color: #000000;
         margin-top: 22px;
         cursor: pointer;
+        margin-left: 1.5px;
     }
 
     .inputs {
         display: flex;
         flex-direction: column;
-        margin-top: -8px;
-        margin-left: 50px;        
+        margin-top: -7.5px;
+        margin-left: 51px;
 
         .modalContent input {
             margin-top: 35.5px;
@@ -200,6 +217,24 @@
             margin-top: -7.4px;
         }
     }
+
+    .underline {
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+      }
+      
+      .underline::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: #878787;
+      }
+    
 }
+
 
 // <HoverUnderlineText>Регистрация</HoverUnderlineText>
